@@ -575,7 +575,7 @@ label{
 .list{
     display: flex;
     justify-content:space-between;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .list-heading {
@@ -618,8 +618,38 @@ hr{
     .section-container{
         margin: 0 5%;
     }
+    .filter{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+    }
+    .from, .to, .date,.btn{
+        height: auto;
+        width: 100%;
+        border-bottom: solid 1px rgb(173, 171, 171);
+        border-right: none;
+        padding: 0px;
+        align-items: center;
+    }
+    .to-date label{
+        display: none;
+    }
     .btn{
-        min-width: 150px;
+        padding: 10px;
+        border-radius: 0px;
+    }
+    .exchange-symbol{
+        transform: rotate(90deg);
+        bottom: -19px;
+        right: 0px;
+    }
+
+    .trending-offer{
+        margin-top: -1rem;
     }
     .offer{
         min-width: 300px;
@@ -653,6 +683,9 @@ hr{
     .card{
         width: 330px;
     }
+    /* .list{
+        gap: 5px;
+    } */
 }
 @media only screen and (max-width: 430px) {
     .navbar{
@@ -714,32 +747,7 @@ hr{
         padding-bottom: 25px;
     }
     .filter{
-        flex-direction: column;
-        /* background-color: transparent; */
-        height: auto;
-        align-items: flex-start;
-        padding: 30px;
-        gap: 20px;
-    }
-    .from, .to, .date,.btn{
-        height: auto;
         width: 100%;
-        border-bottom: solid 1px rgb(173, 171, 171);
-        border-right: none;
-        padding: 0px;
-        align-items: center;
-    }
-    .to-date label{
-        display: none;
-    }
-    .btn{
-        padding: 10px;
-        border-radius: 0px;
-    }
-    .exchange-symbol{
-        transform: rotate(90deg);
-        bottom: -19px;
-        right: 0px;
     }
     .trending-offer{
         margin-top: 1rem;
