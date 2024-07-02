@@ -16,6 +16,7 @@
 }
 .nav-logo{
     width: 80px;
+    cursor: pointer;
 }
 .divider{
     height: 20px;
@@ -41,6 +42,7 @@
     align-items: center;
     padding: 10px 14px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .bus-ticket{
     color: white;
@@ -87,6 +89,7 @@
     align-items: center;
     gap: 10px;
     font-size: small;
+    cursor: pointer;
 }
 .help img, .account img{
     width:20px;
@@ -130,13 +133,15 @@
 .from-input, .to-input, .to-date{
     display: flex;
     flex-direction: column;
+    text-align: justify;
+    font-size: 10px;
 }
  .filter input {
     margin-top: 8px;
     outline: none;
     border: none;
     font-size: 18px;
-    width: 80%;
+    width: 100%;
 }
 label{
     font-size: 0.8rem;
@@ -159,12 +164,12 @@ label{
     border-radius: 0 32px 32px 0;
     border: none;
     background-color: #d84e55;
-    min-width: 269px;
-    max-width: max-content;
+    width: 25%;
     text-transform: uppercase;
     font-size: 1.4rem;
     color: white;
     width: 25%;
+    cursor: pointer;
 }
 
 .trending-offer{
@@ -307,6 +312,7 @@ label{
     border-radius: 20px;
     gap: 10px;
     margin-top: 39px;
+    cursor: pointer;
 }
 .right{
     background-image: url(assets/aboutUsImg.svg);
@@ -413,6 +419,9 @@ label{
 }
 .link, .qr{
     width: 40%;
+}
+.link img{
+    cursor: pointer;
 }
 .section-four{
     display: flex;
@@ -578,6 +587,9 @@ label{
     margin-bottom: 10px;
     color: #666;
 }
+.list div{
+    cursor: pointer;
+}
 /* .list-heading ~ div{
     color: #3e3e52;
     margin-bottom: 10px;
@@ -661,7 +673,7 @@ hr{
         width: 50%;
         background-color: white;
         gap: 0px;
-        transition: all 1s ease-in;
+        transition: all 0.5s ease-in;
         height: 70vh;
         border: 1px solid black;
         z-index: 12;
@@ -687,7 +699,6 @@ hr{
     .help,
     .account {
         font-size: smaller; 
-        /* display: none; */
     }
     .bus-ticket div{
         font-size: smaller;
@@ -716,7 +727,10 @@ hr{
         border-bottom: solid 1px rgb(173, 171, 171);
         border-right: none;
         padding: 0px;
-        align-items: baseline;
+        align-items: center;
+    }
+    .to-date label{
+        display: none;
     }
     .btn{
         padding: 10px;
